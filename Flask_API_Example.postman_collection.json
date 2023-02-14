@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "a34beedb-4e03-49c7-9f2d-fc6c787a16ff",
+		"name": "Flask_API_Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5647548"
+	},
+	"item": [
+		{
+			"name": "HealthCheck Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/orders/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"orders",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Orden",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NjMzNzY5MSwianRpIjoiOTJhNjkzMmItYTU1YS00OGEzLWIyMzctOGI3NThlMWY4NTRkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IkVtcGFuYWRhIGRlIGNhcm5lIGNvbiBwYXBhIiwibmJmIjoxNjc2MzM3NjkxLCJleHAiOjE2NzYzMzc3NTF9.Yz-lcJiNYIXJ5dNqL-If4_xSZ5R7s89pgtzBm8gm-sM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5001/orders/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"orders",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Orden",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item\":\"Empanada de carne con papa\",\n    \"price\":2000,\n    \"desk\":\"C\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Orden",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": \"processed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/orders/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"orders",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancelar Orden",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/orders/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"orders",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
