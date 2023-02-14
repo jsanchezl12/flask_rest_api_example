@@ -1,5 +1,5 @@
 # flask_rest_api_example
-Es un ejemplo de API Rest en Flask
+Es un ejemplo de API Rest en Flask por [juansesanchezl](https://github.com/jsanchezl12).
 
 1. Se deben los siguiente comandos para alistar nuestro entorno virtual
 ```bash
